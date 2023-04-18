@@ -5,17 +5,23 @@
         <field name="model">tutorial.game</field>
         <field name="arch" type="xml">
             <form string="sport">
-                <group name="group_top">
-                    <group name="group_left">
-                        <field name="name"/>
-                        <field name="publisher_ids" widget="many2many_tags"/>
-                        <field name="developer_ids" widget="many2many_tags"/>
+                <header>
+                    <button name="toggle_hidden" type="object" string="Toggle Hidden" />
+                </header>
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="name"/>
+                            <field name="publisher_ids" widget="many2many_tags"/>
+                            <field name="developer_ids" widget="many2many_tags"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="released_date"/>
+                            <field name="hidden"/>
+                            <field name="image" widget="image"/>
+                        </group>
                     </group>
-                    <group name="group_right">
-                        <field name="released_date"/>
-                        <field name="image" widget="image"/>
-                    </group>
-                </group>
+                </sheet>
             </form>
         </field>
     </record>

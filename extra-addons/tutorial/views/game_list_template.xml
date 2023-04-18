@@ -1,0 +1,18 @@
+<odoo>
+	​<template id="game_list_template" name="Sport List">
+        <div id="wrap" class="container">
+            <h1>Sports</h1>
+            <t t-foreach="sports" t-as="sport">
+                <div class="row">
+                    <span t-field="sport.name" />
+                    <span t-field="sport.released_date" />
+                    <span>Publishers: 
+                        <t t-foreach="sport.publisher_ids" t-as="pub">
+                            <span t-field="pub.name" />
+                        </t>
+                    </span>
+                </div>
+            </t>
+        </div>
+    </template>
+</odoo>

@@ -27,7 +27,8 @@
         'security/tutorial_security.xml',
         'security/ir.model.access.csv',
         'views/game_view.xml',
-        'views/menu_view.xml'
+        'views/menu_view.xml',
+        "views/game_list_template.xml",
     ],
     # only loaded in demonstration mode
     'demo': [
