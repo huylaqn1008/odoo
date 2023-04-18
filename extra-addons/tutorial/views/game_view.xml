@@ -1,0 +1,46 @@
+<odoo>
+    <!-- Form -->
+    <record id="view_form_sport" model="ir.ui.view">
+        <field name="name">Sport Form</field>
+        <field name="model">tutorial.game</field>
+        <field name="arch" type="xml">
+            <form string="sport">
+                <group name="group_top">
+                    <group name="group_left">
+                        <field name="name"/>
+                        <field name="publisher_ids" widget="many2many_tags"/>
+                        <field name="developer_ids" widget="many2many_tags"/>
+                    </group>
+                    <group name="group_right">
+                        <field name="released_date"/>
+                        <field name="image" widget="image"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+    <!-- Tree List -->
+    <record id="view_tree_sport" model="ir.ui.view">
+        <field name="name">Sport List</field>
+        <field name="model">tutorial.game</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="publisher_ids" widget="many2many_tags"/>
+                <field name="developer_ids" widget="many2many_tags"/>
+                <field name="released_date"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Search, Filter -->
+    <record id="view_search_sport" model="ir.ui.view">
+        <field name="name">Sport Filters</field>
+        <field name="model">tutorial.game</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="publisher_ids" />
+                <field name="developer_ids"/>
+            </search>
+        </field>
+    </record>
+</odoo>

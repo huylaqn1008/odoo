@@ -22,9 +22,11 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
         # 'views/views.xml',
         # 'views/templates.xml',
+        'security/tutorial_security.xml',
+        'security/ir.model.access.csv',
+        'views/game_view.xml',
         'views/menu_view.xml'
     ],
     # only loaded in demonstration mode

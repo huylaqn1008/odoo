@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_tutorial_tutorial,tutorial.tutorial,model_tutorial_tutorial,base.group_user,1,1,1,1
+tutorial.access_game_user,Game User,tutorial.model_tutorial_game,sport_group_user,1,1,1,0
+tutorial.access_game_manager,Game Manager,tutorial.model_tutorial_game,sport_group_manager,1,1,1,1
