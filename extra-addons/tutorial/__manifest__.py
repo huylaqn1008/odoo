@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "tutorial",
+    'name': "Sport Manager",
 
     'summary': "Tutorial Huy",
 

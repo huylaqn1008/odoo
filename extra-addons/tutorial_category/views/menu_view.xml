@@ -1,0 +1,14 @@
+<odoo>
+    <record id="action_sport_tag" model="ir.actions.act_window">
+
+        <field name="name">Sport Tags</field>
+
+        <field name="res_model">tutorial.game.tag</field>
+
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+    <menuitem id="menu_tutorial_sport_tag" name="Tags" parent="tutorial.base_menu" action="action_sport_tag"/>
+
+</odoo>

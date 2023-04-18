@@ -1,0 +1,14 @@
+<odoo>
+    <template id="sport_list_extended" name="Extending Game List" inherit_id="tutorial.game_list_template">
+        <xpath expr="//span[@t-field='sport.released_date']" position="before">
+            <span>(
+                <t t-foreach="sports.tag_ids" t-as="tag">
+                    <b>
+                        <span style="color:green" t-field="tag.name" />
+                    </b>
+                </t>
+                )
+            </span>
+        </xpath>
+    </template>
+</odoo>
