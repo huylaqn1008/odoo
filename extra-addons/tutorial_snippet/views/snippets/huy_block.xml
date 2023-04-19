@@ -1,0 +1,8 @@
+<odoo>
+ 	​<template id="huy_block" name="Huy Block">
+<!-- Html đc bao phủ bởi phần section -->
+	​<section>
+ 	​	​<p>Lê Tấn Huy</p>
+	​</section>
+	​</template>
+</odoo>

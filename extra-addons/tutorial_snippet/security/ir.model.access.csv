@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tutorial_snippet_tutorial_snippet,tutorial_snippet.tutorial_snippet,model_tutorial_snippet_tutorial_snippet,base.group_user,1,1,1,1

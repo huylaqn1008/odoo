@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="tutorial_theme.main" owl="1">
+        <div class="container">
+            <Card>
+                <t t-set-slot="content">Hello World</t>
+            <Card/>
+            <Card/>  
+            <Card/>      
+        </div>
+    </t>
+</templates>
